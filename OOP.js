@@ -26,7 +26,19 @@
     
     // let person01 = createNewPerson("John",20);
     // console.log(person01);
-    
 
-    
 
+
+class person {
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    getName(){
+        return this.name;
+    }
+    
+}
+
+let person01 = createNewPerson("John",20);
+console.log(person.name);
