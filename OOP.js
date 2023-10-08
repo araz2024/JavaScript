@@ -29,16 +29,16 @@
 
 
 
-class person {
-    constructor(name,age){
-        this.name = name;
-        this.age = age;
-    }
-    getName(){
-        return this.name;
-    }
+    class resume {
+        constructor(name,sureName, age,country,city,phone){
+            this.name = name;
+            this.sureName =sureName;
+            this.age = age;
+            this.country = country;
+            this.city = city;
+            this.phone = phone;
+        }
+    };
     
-}
-
-let person01 = createNewPerson("John",20);
-console.log(person.name);
+    let myResume = new resume ("Araz","Ahmadov",30,"Azerbaijan","Ganja","+9945548884**",);
+    console.log(myResume);
