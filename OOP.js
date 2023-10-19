@@ -90,3 +90,10 @@
 // herfinSonu('salam aleykum natarsan'); 
 
 
+function ededinKvadrati (eded){
+    console.log(eded*2);
+    return eded*eded
+};
+
+let ededK = ededinKvadrati(5);
+console.log(ededK);
