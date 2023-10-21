@@ -90,10 +90,97 @@
 // herfinSonu('salam aleykum natarsan'); 
 
 
-function ededinKvadrati (eded){
-    console.log(eded*2);
-    return eded*eded
-};
+// function ededinKvadrati (eded){
+//     console.log(eded*2);
+//     return eded*eded
+// };
 
-let ededK = ededinKvadrati(5);
-console.log(ededK);
+// let ededK = ededinKvadrati(5);
+// console.log(eded)
+
+// massive ayid olan funcsiyalar
+
+// function findBigNummber(arr) {
+//     let theLargestNumber = arr[0]; // Предполагаем, что первый элемент самый большой
+
+//     for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > theLargestNumber) {
+//         theLargestNumber = arr[i]; // Если текущий элемент больше предыдущего максимального, обновляем значение
+//     }
+// }
+
+//     return theLargestNumber; // Вернуть самое большое число
+// }
+
+// let nums = [20, 30, 15, 45, 12, 35, 28, 42, 19, 50];
+// let theLargestNumber = findBigNummber(nums);
+// console.log("Самое большое число в массиве: " + theLargestNumber);
+
+// function enBoyukVeEnKicikFerq(arr) {
+//     if (arr.length === 0) {
+//       Əgər boş bir massivdirsə, fərqi hesablamaq mümkün deyil
+//       return "Massiv boşdur.";
+//     }
+  
+//     let enBoyukEded = arr[0];
+//     let enKicikEded = arr[0];
+  
+//     for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] > enBoyukEded) {
+//         enBoyukEded = arr[i];
+//       }
+//       if (arr[i] < enKicikEded) {
+//         enKicikEded = arr[i];
+//       }
+//     }
+  
+//     let ferq = enBoyukEded - enKicikEded;
+//     return ferq;
+//   }
+  
+//   let nums = [20, 30, 15, 45, 12, 35, 28, 42, 19, 50];
+//   let ferq = enBoyukVeEnKicikFerq(nums);
+//   console.log("Ən böyük və ən kiçik ədəd arasındakı fərq: " + ferq);
+  
+
+// function tekCütAyrıMassivler(arr) {
+//     let tekEdedler = [];
+//     let cütEdedler = [];
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] % 2 === 0) {
+//         // Əgər ədəd cütdürsə, cüt ədədlər massivinə əlavə edin
+//         cütEdedler.push(arr[i]);
+//       } else {
+//         // Əgər ədəd təkdirsə, tək ədədlər massivinə əlavə edin
+//         tekEdedler.push(arr[i]);
+//       }
+//     }
+  
+//     return { tek: tekEdedler, cüt: cütEdedler };
+//   }
+  
+//   let nums = [20, 30, 15, 45, 12, 35, 28, 42, 19, 50];
+//   let ayrılmışMassivlər = tekCütAyrıMassivler(nums);
+  
+//   console.log("Tək ədədlər: " + ayrılmışMassivlər.tek);
+//   console.log("Cüt ədədlər: " + ayrılmışMassivlər.cüt);
+  
+
+function yirmiDənBöyükOlanlarıSil(arr) {
+    let yeniMassiv = [];
+  
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] <= 20) {
+        yeniMassiv.push(arr[i]);
+      }
+    }
+  
+    return yeniMassiv;
+  }
+  
+  let nums = [20, 30, 15, 45, 12, 35, 28, 42, 19, 50];
+  let yeniMassiv = yirmiDənBöyükOlanlarıSil(nums);
+  
+  console.log("20-dən böyük olanları silmiş massiv: " + yeniMassiv);
+  
